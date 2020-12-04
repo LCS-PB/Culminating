@@ -45,29 +45,26 @@ PlaygroundPage.current.liveView = canvas
 
  */
 
-//create a turtle to use
-
 let turtle = Tortoise(drawingUpon: canvas)
 
-turtle.penUp()
-turtle.left(by: 90)
-turtle.forward(steps: 200)
-turtle.right(by: 90)
-turtle.forward(steps: 125)
-turtle.penDown()
-turtle.forward(steps: 150)
-turtle.right(by: 90)
-turtle.forward(steps: 70)
-turtle.left(by: 130)
-turtle.forward(steps: 160)
-turtle.left(by: 100)
-turtle.forward(steps: 160)
-turtle.left(by: 130)
-turtle.forward(steps: 70)
-turtle.right(by: 90)
-turtle.forward(steps: 150)
-turtle.left(by: 90)
-turtle.forward(steps: 65)
+for _ in 1...4 {
+    turtle.setPenSize(to: 1)
+    turtle.penUp()
+    turtle.setPosition(to: Point(x: 250, y: 250))
+    turtle.penUp()
+    turtle.backward(steps: 100)
+    turtle.penDown()
+
+    turtle.setPenColor(to: .blue)
+    turtle.setFillColor(to: .green)
+    turtle.beginFill()
+    for _ in 1...200 {
+        turtle.forward(steps: 100)
+        turtle.left(by: 170)
+    }
+    turtle.endFill()
+}
+
 /*:
  ## Show the Assistant Editor
  Don't see any results?
