@@ -83,7 +83,7 @@ func drawCubetes() {
 }
 
 func drawRow(){
-    for _ in 1...6 {
+    for _ in 1...7 {
         drawCubetes()
     }
 }
@@ -93,7 +93,67 @@ drawRow()
 
 turtle.penUp()
 turtle.setPosition(to: Point(x: 0, y: 0))
-turtle.forward(steps: 125)
+turtle.right(by: 120)
+turtle.right(by: 90)
+turtle.forward(steps: 43)
+turtle.left(by: 90)
+turtle.forward(steps: 100)
+turtle.left(by: 180)
+turtle.right(by: 60)
+turtle.penDown()
+
+drawRow()
+
+turtle.penUp()
+turtle.setPosition(to: Point(x: 0, y: 0))
+turtle.right(by: 120)
+turtle.forward(steps: 175)
+turtle.left(by: 180)
+turtle.right(by: 60)
+turtle.penDown()
+
+drawRow()
+
+turtle.penUp()
+turtle.setPosition(to: Point(x: 0, y: 0))
+turtle.right(by: 120)
+turtle.right(by: 90)
+turtle.forward(steps: 43)
+turtle.left(by: 90)
+turtle.forward(steps: 250)
+turtle.left(by: 180)
+turtle.right(by: 60)
+turtle.penDown()
+
+drawRow()
+
+turtle.penUp()
+turtle.setPosition(to: Point(x: 0, y: 0))
+turtle.right(by: 120)
+turtle.forward(steps: 325)
+turtle.left(by: 180)
+turtle.right(by: 60)
+turtle.penDown()
+
+drawRow()
+
+turtle.penUp()
+turtle.setPosition(to: Point(x: 0, y: 0))
+turtle.right(by: 120)
+turtle.right(by: 90)
+turtle.forward(steps: 43)
+turtle.left(by: 90)
+turtle.forward(steps: 400)
+turtle.left(by: 180)
+turtle.right(by: 60)
+turtle.penDown()
+
+drawRow()
+
+turtle.penUp()
+turtle.setPosition(to: Point(x: 0, y: 0))
+turtle.right(by: 120)
+turtle.forward(steps: 475)
 turtle.left(by: 180)
 turtle.right(by: 60)
 turtle.penDown()
