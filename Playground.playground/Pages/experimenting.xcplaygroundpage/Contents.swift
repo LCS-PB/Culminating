@@ -44,26 +44,72 @@ PlaygroundPage.current.liveView = canvas
  [Documentation](http://russellgordon.ca/CanvasGraphics/Documentation/) is available.
 
  */
-
 let turtle = Tortoise(drawingUpon: canvas)
+turtle.penUp()
+turtle.forward(steps: 25)
+turtle.penDown()
+turtle.left(by: 180)
+turtle.right(by: 60)
+turtle.forward(steps: 50)
+turtle.right(by: 60)
+turtle.forward(steps: 50)
+turtle.right(by: 120)
+turtle.forward(steps: 50)
+turtle.right(by: 60)
+turtle.forward(steps: 50)
+turtle.left(by: 120)
+turtle.forward(steps: 50)
+turtle.left(by: 60)
+turtle.forward(steps: 50)
+turtle.left(by: 120)
+turtle.forward(steps: 50)
+turtle.right(by: 60)
+turtle.forward(steps: 50)
+turtle.right(by: 120)
+turtle.forward(steps: 50)
+turtle.right(by: 60)
+turtle.forward(steps: 50)
+turtle.right(by: 120)
+turtle.forward(steps: 50)
+turtle.right(by: 60)
+turtle.forward(steps: 50)
 
-for _ in 1...4 {
-    turtle.setPenSize(to: 1)
-    turtle.penUp()
-    turtle.setPosition(to: Point(x: 250, y: 250))
-    turtle.penUp()
-    turtle.backward(steps: 100)
-    turtle.penDown()
 
-    turtle.setPenColor(to: .blue)
-    turtle.setFillColor(to: .green)
-    turtle.beginFill()
-    for _ in 1...200 {
-        turtle.forward(steps: 100)
-        turtle.left(by: 170)
-    }
-    turtle.endFill()
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//let turtle = Tortoise(drawingUpon: canvas)
+//
+//for _ in 1...7 {
+//    turtle.setPenSize(to: 1)
+//    turtle.penUp()
+//    turtle.setPosition(to: Point(x: 250, y: 250))
+//    turtle.penUp()
+//    turtle.backward(steps: 100)
+//    turtle.penDown()
+//
+//    turtle.setPenColor(to: .blue)
+//    turtle.setFillColor(to: .green)
+//    turtle.beginFill()
+//    for _ in 1...200 {
+//        turtle.forward(steps: 100)
+//        turtle.left(by: 170)
+//    }
+//    turtle.endFill()
+//}
 
 /*:
  ## Show the Assistant Editor
