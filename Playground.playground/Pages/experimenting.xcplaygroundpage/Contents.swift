@@ -42,42 +42,63 @@ PlaygroundPage.current.liveView = canvas
  You can remove the code on line 49 and begin writing your own code.
  
  [Documentation](http://russellgordon.ca/CanvasGraphics/Documentation/) is available.
-
+ 
  */
 let turtle = Tortoise(drawingUpon: canvas)
+
+
+
 turtle.penUp()
 turtle.forward(steps: 25)
 turtle.penDown()
 turtle.left(by: 180)
 turtle.right(by: 60)
-turtle.forward(steps: 50)
-turtle.right(by: 60)
-turtle.forward(steps: 50)
-turtle.right(by: 120)
-turtle.forward(steps: 50)
-turtle.right(by: 60)
-turtle.forward(steps: 50)
-turtle.left(by: 120)
-turtle.forward(steps: 50)
-turtle.left(by: 60)
-turtle.forward(steps: 50)
-turtle.left(by: 120)
-turtle.forward(steps: 50)
-turtle.right(by: 60)
-turtle.forward(steps: 50)
-turtle.right(by: 120)
-turtle.forward(steps: 50)
-turtle.right(by: 60)
-turtle.forward(steps: 50)
-turtle.right(by: 120)
-turtle.forward(steps: 50)
-turtle.right(by: 60)
-turtle.forward(steps: 50)
+
+func drawCubetes() {
+    
+    turtle.forward(steps: 50)
+    turtle.right(by: 60)
+    turtle.forward(steps: 50)
+    turtle.right(by: 120)
+    turtle.forward(steps: 50)
+    turtle.right(by: 60)
+    turtle.forward(steps: 50)
+    turtle.left(by: 120)
+    turtle.forward(steps: 50)
+    turtle.left(by: 60)
+    turtle.forward(steps: 50)
+    turtle.left(by: 120)
+    turtle.forward(steps: 50)
+    turtle.right(by: 60)
+    turtle.forward(steps: 50)
+    turtle.right(by: 120)
+    turtle.forward(steps: 50)
+    turtle.right(by: 60)
+    turtle.forward(steps: 50)
+    turtle.right(by: 120)
+    turtle.forward(steps: 50)
+    turtle.right(by: 60)
+    turtle.forward(steps: 50)
+    
+}
+
+func drawRow(){
+    for _ in 1...6 {
+        drawCubetes()
+    }
+}
 
 
+drawRow()
 
+turtle.penUp()
+turtle.setPosition(to: Point(x: 0, y: 0))
+turtle.forward(steps: 125)
+turtle.left(by: 180)
+turtle.right(by: 60)
+turtle.penDown()
 
-
+drawRow()
 
 
 
@@ -118,7 +139,7 @@ turtle.forward(steps: 50)
  Remember to show the Assistant Editor (1), and then switch to Live View (2):
  
  ![timeline](timeline.png "Timeline")
-
+ 
  ## Use source control
  To keep your work organized, receive feedback, and earn a high grade in this course, regular use of source control is a must.
  
